@@ -1,0 +1,52 @@
+div{
+	width: 50px; height: 50px; position:relative; animation:block 2s infinite ease-in-out
+}
+@keyframes block{
+	
+		 0%{transform:rotate(-45deg)} 
+		 50%{transform:rotate(-135deg)} 
+		 100%{transform:rotate(-225deg)}
+	
+}
+
+span{
+	 width: 50px; height: 50px; position:absolute; top:0; left:0; border:4px solid #0B1B48;
+	 
+}
+.span1{animation:startv1 2s infinite ease-in-out;}
+
+@keyframes startv1{
+	 0% {transform:translate(0);} 
+	 50%{transform:translate(-50px, 0); border-color:green;} 
+	 100%{transform:translate(0);}
+}
+
+.span2{animation:startv2 2s infinite ease-in-out;}
+@keyframes startv2{
+	 0% {transform:translate(0);} 
+	 50%{transform:translate(50px, 0); border-color:#875678;} 
+	 100%{transform:translate(0);}
+}
+.span3{
+	animation:startv3 2s infinite ease-in-out
+}
+@keyframes startv3{
+	 0% {transform:translate(0);} 
+	 50%{transform:translate(0, -50px); border-color:#FF9900;} 
+	 100%{transform:translate(0);}
+}
+.span4{
+	animation:startv4 2s infinite ease-in-out
+}
+@keyframes startv4{
+	 0% {transform:translate(0);} 
+	 50%{transform:translate(0, 50px); border-color:#00E4F6;} 
+	 100%{transform:translate(0);}
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
